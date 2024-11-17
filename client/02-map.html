@@ -14,9 +14,12 @@
         ];
         const app = document.getElementById('app');
 
-        products.forEach(product => {
-            app.innerHTML += `<li>${product.title} - ${product.price}</li>`
+        const lis = products.map(product => {
+            return `<li>${product.title} - ${product.price}</li>`
         });
+
+        console.log(lis);
+        app.innerHTML = lis.join('')
     </script>
 </body>
 </html>
