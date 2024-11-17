@@ -29,10 +29,7 @@ console.log('respuesta:', respuesta);
 
 // Exercise: Histogram. How many numbers are there between 1-5, 6-8, 9-10?
 
-const numbers = [];
-for (let i = 0; i < 20; i++) {
-    numbers.push(Math.floor(Math.random() * 10) + 1);
-}
+const numbers = Array.from({ length: 20 }, () => Math.floor(Math.random() * 10) + 1);
 console.log(numbers);
 
 const histogram = numbers.reduce((obj, item) => {
