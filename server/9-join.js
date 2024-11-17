@@ -15,3 +15,11 @@ const title = 'Curso de manipulación de arrays';
 
 const urlFinal = title.split(' ').join('-').toLowerCase();
 console.log(urlFinal);
+
+
+// Exercise
+function parseToURL(title) {
+    console.log(title.split(' ').join('-').toLowerCase());
+}
+
+parseToURL("La forma de correr Python");
