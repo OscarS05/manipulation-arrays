@@ -1,4 +1,14 @@
 //flat
+var arr1 = [1, 2, [3, 4]];
+arr1.flat();
+
+var arr2 = [1, 2, [3, 4, [5, 6]]];
+arr2.flat();
+
+var arr3 = [1, 2, [3, 4, [5, 6]]];
+arr3.flat(2);
+
+
     // CHALLENGE: flat without method. flat with recursivity
 const matriz2 = [
     [1,2,3],
