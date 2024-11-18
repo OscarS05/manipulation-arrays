@@ -23,3 +23,17 @@ function parseToURL(title) {
 }
 
 parseToURL("La forma de correr Python");
+
+// Exercise: Count words
+const phrases = [
+    "Beautiful is better than ugly",
+    "Explicit is better than implicit",
+    "Simple is better than complex",
+    "Complex is better than complicated",
+]
+
+function countWords(array){
+    return array.join(" ").split(" ").length
+}
+
+console.log(countWords(phrases));
